@@ -1,0 +1,45 @@
+usd_to_inr = 83.0
+eur_to_inr = 89.25
+gbp_to_inr = 103.75
+jpy_to_inr = 0.53
+aud_to_inr = 55.33
+cad_to_inr = 61.03
+chf_to_inr = 91.21
+cny_to_inr = 11.50
+sgd_to_inr = 61.48
+
+print("Welcome to the Currency Converter!")
+print("Available currencies: USD, EUR, GBP, JPY, AUD, CAD, CHF, CNY, SGD")
+
+currency = input("Enter the currency code to convert to INR: ").upper()
+amount = float(input(f"Enter amount in {currency}: "))
+
+if currency == "USD":
+    converted = amount * usd_to_inr
+    print(f"{amount} USD is equal to {converted:.2f} INR")
+elif currency == "EUR":
+    converted = amount * eur_to_inr
+    print(f"{amount} EUR is equal to {converted:.2f} INR")
+elif currency == "GBP":
+    converted = amount * gbp_to_inr
+    print(f"{amount} GBP is equal to {converted:.2f} INR")
+elif currency == "JPY":
+    converted = amount * jpy_to_inr
+    print(f"{amount} JPY is equal to {converted:.2f} INR")
+elif currency == "AUD":
+    converted = amount * aud_to_inr
+    print(f"{amount} AUD is equal to {converted:.2f} INR")
+elif currency == "CAD":
+    converted = amount * cad_to_inr
+    print(f"{amount} CAD is equal to {converted:.2f} INR")
+elif currency == "CHF":
+    converted = amount * chf_to_inr
+    print(f"{amount} CHF is equal to {converted:.2f} INR")
+elif currency == "CNY":
+    converted = amount * cny_to_inr
+    print(f"{amount} CNY is equal to {converted:.2f} INR")
+elif currency == "SGD":
+    converted = amount * sgd_to_inr
+    print(f"{amount} SGD is equal to {converted:.2f} INR")
+else:
+    print("Invalid currency selected.")
